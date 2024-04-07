@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa;
+  }
+  .container {
+    margin-top: 100px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  .btn-search {
+    width: 100%;
+  }

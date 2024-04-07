@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Search Bot</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Lyrics Search Bot</h1>
+    <form action="{{ url_for('search') }}" method="post">
+      <div class="form-group">
+        <label for="searchInput">Enter song name or lyrics sample:</label>
+        <input type="text" name="song_name" id="searchInput" class="form-control" placeholder="Enter song name or lyrics" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-search">Search</button>
+    </form>
+  </div>
+</body>
+</html>

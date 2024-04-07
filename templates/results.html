@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Search Results</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='result.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Search Results</h1>
+    <div class="result">
+      <h3>Artist: {{ song_info.artist }}</h3>
+      <p>Song: {{ song_info.title }}</p>
+      <p><a href="{{ song_info.url }}">Listen Here</a></p>
+    </div>
+  </div>
+</body>
+</html>
